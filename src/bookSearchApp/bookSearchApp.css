@@ -1,0 +1,10 @@
+.bookSearchApp > h1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin: 0;
+    height: 130px;
+}

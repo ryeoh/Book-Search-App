@@ -1,0 +1,18 @@
+.bookDetails {
+    display: flex;
+    margin: 5px;
+}
+
+.bookTitle > h2 {
+    text-align: center;
+}
+
+.bookCoverThumbnail {
+    height: 100%;
+}
+
+.bookInfo {
+    height: 100%;
+    width: 70%;
+    text-align: center;
+}

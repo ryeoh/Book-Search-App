@@ -1,0 +1,14 @@
+.book-filter {
+    background-color: lightgrey;
+    height: 40px;
+    line-height: 40px;
+}
+
+.bookTypeOptions {
+    width: 175px;
+}
+
+.printTypeOptions {
+    width: 100px;
+    margin-right: 10px;
+}
