@@ -2,18 +2,27 @@ import React, {Component} from 'react';
 import './bookFilter.css';
 
 class BookFilter extends Component {
-    render() {
+
+    render(props) {
         return (
             <div className='book-filter'>
-                <label className='printType'>Print Type: </label>
-                <select className='printTypeOptions'>
+                <label htmlFor='printType' className='printType'>Print Type: </label>
+                <select 
+                    id='printType'
+                    value={this.props.printType}
+                    className='printTypeOptions'
+                    onChange={e => this.props.handleFilter('printType', e.target.value)}>
                     <option value="all">All</option>
                     <option value="books">Books</option>
                     <option value="magazines">Magazines</option>
                 </select>
 
-                <label className='bookType'>Book Type: </label>
-                <select className='bookTypeOptions'>
+                <label htmlFor='filter' className='bookType'>Book Type: </label>
+                <select 
+                    id='filter'
+                    value={this.props.filter}
+                    className='bookTypeOptions'
+                    onChange={e => this.props.handleFilter('filter', e.target.value)}>
                     <option value="no-filter">No filter</option>
                     <option value="partial">Partial</option>
                     <option value="full">Full</option>

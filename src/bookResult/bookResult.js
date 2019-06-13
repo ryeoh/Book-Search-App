@@ -3,8 +3,13 @@ import './bookResult.css';
 
 class BookResult extends Component {
     render() {
+        const formatter = new Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: 'USD',
+            minimumFractionDigits: 2
+          })
         const pricing = this.props.saleInfo.listPrice
-            ? this.props.saleInfo.listPrice.amount
+            ? formatter.format(this.props.saleInfo.listPrice.amount)
             : <span>N/A</span>
         const description = this.props.searchInfo
             ? this.props.searchInfo.textSnippet

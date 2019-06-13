@@ -11,6 +11,7 @@ class BookListResults extends Component {
             <BookResult {...book} key={i} />
             );
         console.log(books);
+
         return (
             <div className='bookListResults'>
                 {books}

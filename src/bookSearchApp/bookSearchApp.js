@@ -12,9 +12,14 @@ class BookSearchApp extends Component {
                 <BookSearchBar
                     handleChange={this.props.handleChange} 
                     handleSubmit={this.props.handleSubmit}
+                    handleFilter={this.props.handleFilter}
+                    printType={this.props.printType}
+                    filter={this.props.filter}
                      />
                 <BookListResults 
                     searchResults={this.props.searchResults}
+                    printType={this.props.printType}
+                    filter={this.props.filter}
                  />
             </div>
         )

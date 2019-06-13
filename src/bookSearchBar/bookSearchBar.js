@@ -12,7 +12,11 @@ class bookSearch extends Component {
                     handleChange={this.props.handleChange}
                     handleSubmit={this.props.handleSubmit}
                     />
-                <BookFilter />
+                <BookFilter 
+                    handleFilter={this.props.handleFilter}
+                    printType={this.props.printType}
+                    filter={this.props.filter}
+                    />
             </div>
         )
     };
