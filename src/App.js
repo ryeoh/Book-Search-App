@@ -21,13 +21,6 @@ class App extends Component {
     });
   }
 
-  // formatQueryParams(params) {
-  //   const queryItems = Object.keys(params)
-  //     .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(params[key])}`);
-  //   let queryString = queryItems.join('&');
-  //   return queryString;
-  // };
-
   handleSubmit(e) {
     e.preventDefault();
 
